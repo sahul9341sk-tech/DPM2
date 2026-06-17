@@ -44,21 +44,7 @@ TEXT_TOOLS = (
     "🎨 Magic Patterns Starter — 1 Year\n"
     "🏢 Stripe Atlas — 40% OFF\n\n"
     "-----------------------------------------\n\n"
-    "🚀 *WARP DEV – NOW AVAILABLE* 🚀\n\n"
-    "👉🏻 Plan - Build\n"
-    "⌛ Validity: 01 Year\n"
-    "📧 Activation on your Personal Email ID\n\n"
-    "❌ Original Price: $200 = ₹17,627.80 ❌\n"
-    "✅ *OUR OFFER PRICE: Rs 3,999/- Only*\n\n"
-    "🔥 *THE AGENTIC DEVELOPMENT ENVIRONMENT*\n"
-    "Warp is the fastest way to build with multiple AI agents—from writing code to shipping it.\n\n"
-    "🎯 *WHAT YOU WILL GET:*\n"
-    "✅ Blazing-fast performance (built in Rust)\n"
-    "✅ AI command suggestions & explanations\n"
-    "✅ Block-based workflow – edit like a doc\n"
-    "✅ Autocomplete, syntax highlighting & instant output\n"
-    "✅ Built-in AI assistant to write commands and debug\n\n"
-    "🎯 *Work Smarter—Private Activation, Grab it Before it's Gone!*"
+
 )
 
 TEXT_OTT = (
