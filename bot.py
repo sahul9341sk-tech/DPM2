@@ -2,7 +2,7 @@ import telebot
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 # --- 1. CONFIGURATION & BOT IDENTITY ---
-BOT_TOKEN = "8621695726:AAHzzR14DMUG10X2UG36KW51UC5z0JXgU2c"
+BOT_TOKEN = "8621695726:AAHyzRi4DWUGl0X2UG36KWSiUCSz0JXgU2c"
 bot = telebot.TeleBot(BOT_TOKEN)
 
 CONTACT_USERNAME = "sahulrmehta"
