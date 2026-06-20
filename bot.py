@@ -18,33 +18,172 @@ TEXT_START = (
 
 TEXT_TOOLS = (
     "🚀⚡ *ULTIMATE AI STARTUP & PRODUCTIVITY BUNDLE* ⚡🚀\n\n"
-    "🎨 Canva Business — 1 Year\n"
-    "💻 Cursor Pro — 1 Year\n"
-    "🗣️ ElevenLabs Creator — 1 Year\n"
-    "📊 Gamma Pro — 1 Year\n"
-    "🤖 Google AI Pro — 1 Year\n"
-    "🚀 Lovable Pro — 1 Year\n"
-    "⚙️ n8n Cloud Starter — 1 Year\n"
-    "🛢️ Supabase Pro Credits — 1 Year\n"
-    "📝 ChatPRD Pro — 1 Year\n"
-    "🏭 Factory Pro — 1 Year\n"
-    "🎨 Framer Pro — 1 Year\n"
-    "📒 Granola Business (10 Seats) — 1 Year\n"
-    "🤖 Gumloop Pro (20K Credits/Month) — 1 Year\n"
-    "💬 Intercom Fin AI + Advanced — 1 Year\n"
-    "📈 Linear Business (5 Seats) — 1 Year\n"
-    "🎭 Manus AI (4K Credits/Month) — 1 Year\n"
-    "📱 Mobbin Team (10 Seats) — 1 Year\n"
-    "🧠 Notion Business — 1 Year\n"
-    "📊 PostHog Scale — 1 Year\n"
-    "🚄 Railway Hobby — 1 Year\n"
-    "💻 Replit Core — 1 Year\n"
-    "⚡ Warp Build — 1 Year\n"
-    "🎙️ Wispr Flow Pro — 1 Year\n"
-    "🎨 Magic Patterns Starter — 1 Year\n"
-    "🏢 Stripe Atlas — 40% OFF\n\n"
-    "-----------------------------------------\n\n"
-
+    PREMIUM_STOCK = {
+    "TOP_SELLING": [
+        "⚡ Vapi – 200 USD Credits (12M)\n",
+        "⚡ Perplexity Pro – 1Y\n",
+        "⚡ Beautiful.ai Pro – 1Y\n",
+        "⚡ Gamma.AI Pro – 1Y\n",
+        "⚡ N8N Starter – 1Y\n",
+        "⚡ Replit Core – 1Y\n",
+        "⚡ Raycast Pro – 1Y\n",
+        "⚡ Superhuman Starter – 1Y\n",
+        "⚡ Linear Business – 1Y\n",
+        "⚡ Granola Business – 1Y\n",
+        "⚡ Webflow CMS – 1Y\n",
+        "⚡ Webflow Business – 1Y\n",
+        "⚡ Webflow Growth – 1Y\n",
+        "⚡ Notion Business + AI – 3M / 6M\n",
+        "⚡ Otter.ai Pro – 1Y\n",
+        "⚡ ClickUp Enterprise – 1Y\n"
+    ],
+    "AI_DESIGN_CREATIVITY": [
+        "🎨 Beautiful.ai Pro – 1Y\n",
+        "🎨 Magic Patterns Hobby – 1Y\n",
+        "🖼️ Slidebean Starter – 1Y\n",
+        "🖼️ PNGTree Premium – Lifetime\n",
+        "🖼️ Pixpa Pro – 6M\n",
+        "🖼️ Pikbest Premium – 1Y\n",
+        "🎞️ Flixier Pro – 1Y\n",
+        "🎬 Movavi Unlimited (1 PC) – 1Y\n",
+        "🎨 Rive.app Cadet – 1Y\n",
+        "🎨 3D Swymer + Creator + Collaborative Industry Innovator – 1Y\n",
+        "🎨 3D Swymer + Sculptor + Collaborative Industry Innovator – 1Y\n",
+        "🎨 3D Swymer + Collaborative Industry Innovator – 1Y\n"
+    ],
+    "AI_TOOLS": [
+        "🤖 Mobbin Pro – 1Y\n",
+        "🤖 ChatPRD Pro – 1Y\n",
+        "🔍 Perplexity Pro – 1Y\n",
+        "⚡ Raycast Pro – 1Y\n",
+        "🧠 Wispr Flow Pro – 1Y\n",
+        "🧠 Reclaim AI Starter – 1Y\n",
+        "🤖 Fireflies Pro – 1Y\n",
+        "🤖 Fireflies Business – 1Y\n",
+        "🤖 Consensus Pro – 1Y\n",
+        "🤖 Dreamlit Pro – 6M\n",
+        "🤖 Firecrawl AI – 50K Credits (1Y)\n",
+        "🤖 AppWrite Pro – 4M\n"
+    ],
+    "BUSINESS_MARKETING_PRODUCTIVITY": [
+        "📬 Enginemailer Free Forever 10K/mo – Lifetime\n",
+        "📈 Gummysearch Pro – 1M\n",
+        "📊 Requestly Pro – 6M\n",
+        "📊 Full Enrich Pro (1000 Credits) – 1M\n",
+        "🎥 Screenspace.io Launch – 1M\n",
+        "🖼️ Clipping Mini – 3M\n",
+        "⚙️ Trace Pro – 3M\n",
+        "⚙️ Trace Teams – 3M\n",
+        "📈 Viral Launch Core – 1M\n",
+        "📈 Viral Launch Growth – 1M\n",
+        "📊 Keyword Hero – 6M\n",
+        "📨 Typefully Creator / Team / Agency – 1M\n",
+        "📨 Postiz (Standard / Teams / Pro / Ultimate) – 1M\n",
+        "📨 Planoly Social Planner Starter – 1Y\n",
+        "📊 SmartScout (Basic / Essentials) – 1M\n",
+        "📊 AMZScout AI Bundle – 1M\n",
+        "📊 Omnisend Standard – 3M\n",
+        "📊 Schematic Growth – 1M\n"
+    ],
+    "WEB_DEV_CLOUD_HOSTING": [
+        "🌐 Webflow CMS – 1Y\n",
+        "🌐 Webflow Business – 1Y\n",
+        "🌐 Webflow Growth – 1Y\n",
+        "☁️ Hostinger Cloud Startup – 1Y\n",
+        "☁️ Backblaze Cloud Unlimited Backup – 1Y\n",
+        "☁️ SendAnywhere Lite / Standard – 1Y\n",
+        "☁️ WeTransfer Ultimate – 1Y\n",
+        "☁️ AppWrite Pro – 4M\n",
+        "☁️ Exa AI Websets – 8000 Credits (14D)\n",
+        "☁️ Exa AI API – 50 USD Credits (1Y)\n",
+        "🛠️ PostHog Scale – 1Y\n",
+        "🛠️ AppWizzy Basic – 1M\n",
+        "🛠️ OpenArt AI Advanced – 1M\n"
+    ],
+    "EDU_CAREER_LEARNING": [
+        "🎓 Rezi AI – Lifetime\n",
+        "🎓 Scrimba Pro – 1Y\n",
+        "📚 PNGTree Premium – Lifetime\n",
+        "📚 No Code MBA Unlimited – 1M\n",
+        "📚 Whizlabs Premium / Premium Plus – 1M\n",
+        "📚 Whizlabs Premium – 1Y\n",
+        "📝 Paperpal Prime – 1M\n",
+        "💼 LinkedIn Career Premium – 3M\n"
+    ],
+    "CAD_3D_ENGINEERING": [
+        "🟣 3D Swymer + Creator + Collaborative Industry Innovator – 1Y\n",
+        "🟣 3D Swymer + Sculptor + Collaborative Industry Innovator – 1Y\n",
+        "🟣 3DEXPERIENCE SOLIDWORKS Pro + Swymer + Collaborative Industry Innovator – 1Y\n",
+        "🟣 3D Swymer + Collaborative Industry Innovator – 1Y\n",
+        "🟣 3D Swymer + NC Shop Floor Programmer + Collaborative Industry Innovator – 1Y\n",
+        "🟣 Full 6-Product 3D Suite – 1Y\n"
+    ],
+    "SHORT_TERM_POWER_DEALS": [
+        "🧠 Jasper AI Pro – 1M\n",
+        "🧠 Lex Pro – 1M\n",
+        "⚡ CodeRabbit Pro – 1M / 2M\n",
+        "⚡ FlutterFlow Premium – 2M\n",
+        "✨ Cosine.sh Hobby / Pro – 1M\n",
+        "📚 Figma Pro – 1M\n",
+        "☁️ Cloudinary Plus – 1M\n",
+        "📝 Wordtune Unlimited – 1M\n",
+        "🔍 Notion Business + AI – 3M / 6M\n",
+        "⚙️ Sentry.io Teams – 1Y\n",
+        "⚙️ Sentry.io Business – 1Y\n",
+        "🔧 CreeperSEOAudit Standard / Pro – 6M\n",
+        "📝 Jenni Unlimited – 1M\n",
+        "📚 Ebookmaker.ai Starter / Creator / Enterprise – 1M\n",
+        "🧠 Humanic AI Growth / Scale – 1M\n",
+        "🧪 Dev.to Plus Plus – 1M\n",
+        "📁 Airtable Teams / Business – 1M\n",
+        "🧰 Frame.io Teams – 3M\n",
+        "🧰 Zeplin Advanced – 1Y\n",
+        "🧰 Miro Business – 3M\n",
+        "🧰 Miro Starter (1 Seat) – 1Y\n",
+        "🧰 AhaSlides Essentials / Pro – 12M\n"
+    ],
+    "SECURITY_DEV_TOOLS": [
+        "🔐 Bitwarden Premium + Family – 1Y\n",
+        "💻 GitLab Ultimate – 12M\n",
+        "💻 IntelliJ IDEA Ultimate – 3M / 6M\n",
+        "💻 PyCharm Pro – 6M\n",
+        "🧪 Postman Basic – 1Y\n",
+        "🛠️ Sentry.io Teams / Business – 1Y\n",
+        "🛠️ Requestly Pro – 6M\n",
+        "🛠️ Termly.io Starter / Pro+ – 1Y\n"
+    ],
+    "VIDEO_AUDIO_CONTENT": [
+        "🎥 Flixier Pro – 1Y\n",
+        "🎥 Tella Pro / Premium – 1M\n",
+        "🎥 Restream.io Standard – 1Y\n",
+        "🎥 LiveReacting Small / Medium / 24/7 / Countdown – 1M\n",
+        "🎧 Moises AI Premium / Pro – 1Y\n",
+        "🎧 MusicGPT Ultra – 1M\n",
+        "🎙️ Augie Studio Unlimited – 1M\n",
+        "🎙️ Fireflies Pro / Business – 1Y / 1M\n",
+        "🎙️ Maestra AI Premium – 1M\n"
+    ],
+    "SOCIAL_BRANDING_LANDING": [
+        "🔗 Linktree Pro – 1Y / 3M\n",
+        "📄 Pagemaker Pro / Agency – 1Y\n",
+        "📄 Framer Basic / Pro – 1Y\n",
+        "📄 Tilda Personal – 1Y\n",
+        "📄 PluginsForWP Unlimited Downloads – 1Y\n",
+        "📄 Trendtrack Starter / Pro / Business – 1M\n"
+    ],
+    "MISC_PREMIUM": [
+        "🧠 ZeroEssay Premium – 1M\n",
+        "🧠 ComputerX AI Pro / Premium – 1M\n",
+        "🧠 Dynal AI Starter / Pro / Ultimate – 1M\n",
+        "🧠 Reforge AI Build – 1M\n",
+        "📷 Letsenhance Starter / Pro / Max – 1M\n",
+        "📷 Tripo Studio Pro / Advanced / Premium – 1M\n",
+        "📷 Collov AI Standard / Advanced / Premium – 1M\n",
+        "📊 Scalelist Scaler (3000 Credits) – 1M\n",
+        "📊 Gencraft AI Pro – 1M\n",
+        "📊 Trendtrack Starter / Pro / Business – 1M\n"
+    ]
+}
 )
 
 TEXT_OTT = (
