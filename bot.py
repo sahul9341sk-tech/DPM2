@@ -2,9 +2,7 @@ import telebot
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 # --- 1. CONFIGURATION & BOT IDENTITY ---
-# Paste your actual bot token received from @BotFather inside the quotes below
-BOT_TOKEN = "8621695726:AAHyzRi4DWUGl0X2UG36KWSiUCSz0JXgU2c"
-
+BOT_TOKEN = "8621695726:AAHzzR14DMUG10X2UG36KW51UC5z0JXgU2c"
 bot = telebot.TeleBot(BOT_TOKEN)
 
 CONTACT_USERNAME = "sahulrmehta"
@@ -16,9 +14,36 @@ TEXT_START = (
     "Select a category below to browse:"
 )
 
-TEXT_TOOLS = (
-    "🚀⚡ *ULTIMATE AI STARTUP & PRODUCTIVITY BUNDLE* ⚡🚀\n\n"
-    PREMIUM_STOCK = {
+TEXT_TOOLS = "🚀⚡ *ULTIMATE AI STARTUP & PRODUCTIVITY BUNDLE* ⚡🚀\n\nNiche diye gaye categories mein se choose karein:"
+
+# Telegram Accounts ka specific text layout
+TEXT_TELEGRAM_STOCK = (
+    "🚀🔥 *TG ACCOUNTS AVAILABLE FOR SALE* 🔥🚀\n"
+    "📲 *TELEGRAM ACCOUNTS READY TO USE* ✅\n"
+    "⚡ _Fast Delivery_ | 💯 _Quality Accounts_ | 🔒 _Trusted Seller_\n\n"
+    "🌍 *AVAILABLE COUNTRIES & PRICES* 🌍\n\n"
+    "🇮🇳 INDIA ➜ ₹240\n"
+    "🇧🇩 BANGLADESH ➜ ₹180\n"
+    "🇨🇴 COLOMBIA ➜ ₹160\n"
+    "🇺🇸 USA ➜ ₹260\n"
+    "🇵🇰 PAKISTAN ➔ ₹180\n"
+    "🇦🇪 UAE ➜ ₹160\n\n"
+    "🚀 *DON'T MISS OUT — GRAB YOUR ACCOUNT TODAY!* 🚀"
+)
+
+# WhatsApp Accounts ka specific text layout
+TEXT_WHATSAPP_STOCK = (
+    "📱🔥 *WHATSAPP ACCOUNTS FOR SALE* 🔥📱\n"
+    "📲 *WA BULK/MARKETING ACCOUNTS READY* ✅\n"
+    "⚡ _Instant Setup_ | 💯 _High Trust Score_ | 🔒 _100% Safe_\n\n"
+    "🌍 *AVAILABLE COUNTRIES & PRICES* 🌍\n\n"
+    "🇻🇪 VENEZUELA ➜ ₹160\n"
+    "🇿🇲 ZAMBIA ➜ ₹180\n"
+    "🇳🇬 NIGERIA ➜ ₹140\n\n"
+    "🔥 *BOOST YOUR BUSINESS MARKETING TODAY!* 🔥"
+)
+
+PREMIUM_STOCK = {
     "TOP_SELLING": [
         "⚡ Vapi – 200 USD Credits (12M)\n",
         "⚡ Perplexity Pro – 1Y\n",
@@ -47,15 +72,15 @@ TEXT_TOOLS = (
         "🎞️ Flixier Pro – 1Y\n",
         "🎬 Movavi Unlimited (1 PC) – 1Y\n",
         "🎨 Rive.app Cadet – 1Y\n",
-        "🎨 3D Swymer + Creator + Collaborative Industry Innovator – 1Y\n",
-        "🎨 3D Swymer + Sculptor + Collaborative Industry Innovator – 1Y\n",
+        "🎨 3D Swymer + Creator + Coll. Innovator – 1Y\n",
+        "🎨 3D Swymer + Sculptor + Coll. Innovator – 1Y\n",
         "🎨 3D Swymer + Collaborative Industry Innovator – 1Y\n"
     ],
     "AI_TOOLS": [
         "🤖 Mobbin Pro – 1Y\n",
         "🤖 ChatPRD Pro – 1Y\n",
         "🔍 Perplexity Pro – 1Y\n",
-        "⚡ Raycast Pro – 1Y\n",
+        "⚡ Raycast Pro / Raycast Pro (1Y)\n",
         "🧠 Wispr Flow Pro – 1Y\n",
         "🧠 Reclaim AI Starter – 1Y\n",
         "🤖 Fireflies Pro – 1Y\n",
@@ -65,7 +90,7 @@ TEXT_TOOLS = (
         "🤖 Firecrawl AI – 50K Credits (1Y)\n",
         "🤖 AppWrite Pro – 4M\n"
     ],
-    "BUSINESS_MARKETING_PRODUCTIVITY": [
+    "BUSINESS_MARKETING": [
         "📬 Enginemailer Free Forever 10K/mo – Lifetime\n",
         "📈 Gummysearch Pro – 1M\n",
         "📊 Requestly Pro – 6M\n",
@@ -76,7 +101,7 @@ TEXT_TOOLS = (
         "⚙️ Trace Teams – 3M\n",
         "📈 Viral Launch Core – 1M\n",
         "📈 Viral Launch Growth – 1M\n",
-        "📊 Keyword Hero – 6M\n",
+        "📊 Keyword Hero (Big/Giant/Ultimate Hero) – 6M\n",
         "📨 Typefully Creator / Team / Agency – 1M\n",
         "📨 Postiz (Standard / Teams / Pro / Ultimate) – 1M\n",
         "📨 Planoly Social Planner Starter – 1Y\n",
@@ -85,7 +110,7 @@ TEXT_TOOLS = (
         "📊 Omnisend Standard – 3M\n",
         "📊 Schematic Growth – 1M\n"
     ],
-    "WEB_DEV_CLOUD_HOSTING": [
+    "WEB_DEV_CLOUD": [
         "🌐 Webflow CMS – 1Y\n",
         "🌐 Webflow Business – 1Y\n",
         "🌐 Webflow Growth – 1Y\n",
@@ -97,28 +122,28 @@ TEXT_TOOLS = (
         "☁️ Exa AI Websets – 8000 Credits (14D)\n",
         "☁️ Exa AI API – 50 USD Credits (1Y)\n",
         "🛠️ PostHog Scale – 1Y\n",
-        "🛠️ AppWizzy Basic – 1M\n",
+        "🛠️ AppWizzy Basic (25 / 60 Credits) – 1M\n",
         "🛠️ OpenArt AI Advanced – 1M\n"
     ],
-    "EDU_CAREER_LEARNING": [
+    "EDU_LEARNING": [
         "🎓 Rezi AI – Lifetime\n",
         "🎓 Scrimba Pro – 1Y\n",
         "📚 PNGTree Premium – Lifetime\n",
         "📚 No Code MBA Unlimited – 1M\n",
         "📚 Whizlabs Premium / Premium Plus – 1M\n",
         "📚 Whizlabs Premium – 1Y\n",
-        "📝 Paperpal Prime – 1M\n",
+        "📚 Paperpal Prime – 1M\n",
         "💼 LinkedIn Career Premium – 3M\n"
     ],
-    "CAD_3D_ENGINEERING": [
-        "🟣 3D Swymer + Creator + Collaborative Industry Innovator – 1Y\n",
-        "🟣 3D Swymer + Sculptor + Collaborative Industry Innovator – 1Y\n",
-        "🟣 3DEXPERIENCE SOLIDWORKS Pro + Swymer + Collaborative Industry Innovator – 1Y\n",
+    "CAD_ENGINEERING": [
+        "🟣 3D Swymer + Creator + Coll. Innovator – 1Y\n",
+        "🟣 3D Swymer + Sculptor + Coll. Innovator – 1Y\n",
+        "🟣 3DEXP SOLIDWORKS Pro + Swymer + Coll. Innovator – 1Y\n",
         "🟣 3D Swymer + Collaborative Industry Innovator – 1Y\n",
-        "🟣 3D Swymer + NC Shop Floor Programmer + Collaborative Industry Innovator – 1Y\n",
-        "🟣 Full 6-Product 3D Suite – 1Y\n"
+        "🟣 3D Swymer + NC Shop Floor Programmer + Coll. Innovator – 1Y\n",
+        "🟣 Full 6-Product 3D Suite (SOLIDWORKS Pro + All) – 1Y\n"
     ],
-    "SHORT_TERM_POWER_DEALS": [
+    "SHORT_TERM_DEALS": [
         "🧠 Jasper AI Pro – 1M\n",
         "🧠 Lex Pro – 1M\n",
         "⚡ CodeRabbit Pro – 1M / 2M\n",
@@ -156,7 +181,7 @@ TEXT_TOOLS = (
         "🎥 Flixier Pro – 1Y\n",
         "🎥 Tella Pro / Premium – 1M\n",
         "🎥 Restream.io Standard – 1Y\n",
-        "🎥 LiveReacting Small / Medium / 24/7 / Countdown – 1M\n",
+        "🎥 LiveReacting Small / Med / 24/7 / Countdown – 1M\n",
         "🎧 Moises AI Premium / Pro – 1Y\n",
         "🎧 MusicGPT Ultra – 1M\n",
         "🎙️ Augie Studio Unlimited – 1M\n",
@@ -184,7 +209,6 @@ TEXT_TOOLS = (
         "📊 Trendtrack Starter / Pro / Business – 1M\n"
     ]
 }
-)
 
 TEXT_OTT = (
     "✨ 🔥 *PREMIUM STREAMING & MUSIC PLATFORMS* 🔥 ✨\n\n"
@@ -208,13 +232,6 @@ TEXT_SERVICES = (
     "• High-converting editing for Reels, YouTube, and Ads."
 )
 
-TEXT_VIRTUAL = (
-    "📱 *VIRTUAL ACCOUNTS*\n\n"
-    "Get verified channels or bulk virtual setups for business growth:\n\n"
-    "• WhatsApp Marketing/Bulk Accounts\n"
-    "• Telegram Accounts & Scraper Groups"
-)
-
 TEXT_DEALS = (
     "💰 *BEST DEALS & AFFILIATE PROGRAMMES*\n\n"
     "Maximize your earnings with our curated affiliate setup loops:\n"
@@ -226,46 +243,20 @@ TEXT_DEALS = (
 TEXT_SOCIAL_GROWTH = (
     "🚀 *SOCIAL GROWTH — BOOST YOUR SOCIAL PRESENCE!* 🚀\n\n"
     "👁️ *INSTAGRAM VIEWS*\n"
-    "• 1k Views ➔ ₹3\n"
-    "• 5k Views ➔ ₹7\n"
-    "• 10k Views ➔ ₹10\n"
-    "• 15k Views ➔ ₹20\n"
-    "• 20k Views ➔ ₹35\n"
-    "• 60k Views ➔ ₹79\n"
-    "• 100k Views ➔ ₹149\n"
-    "• 1M Views ➔ ₹399\n\n"
+    "• 1k Views ➔ ₹3 | 10k Views ➔ ₹10 | 1M Views ➔ ₹399\n\n"
     "👤 *INSTAGRAM FOLLOWERS*\n"
-    "• 100 Followers ➔ ₹20\n"
-    "• 200 Followers ➔ ₹30\n"
-    "• 300 Followers ➔ ₹50\n"
-    "• 500 Followers ➔ ₹100\n"
-    "• 1k Followers ➔ ₹120\n"
-    "• 2k Followers ➔ ₹209\n"
-    "• 3k Followers ➔ ₹399\n"
-    "• 5k Followers ➔ ₹649\n"
-    "• 10k Followers ➔ ₹999\n\n"
+    "• 100 Followers ➔ ₹20 | 1k Followers ➔ ₹120 | 10k Followers ➔ ₹999\n\n"
     "❤️ *INSTAGRAM LIKES*\n"
-    "• 100 Likes ➔ ₹7\n"
-    "• 200 Likes ➔ ₹10\n"
-    "• 300 Likes ➔ ₹20\n"
-    "• 500 Likes ➔ ₹30\n"
-    "• 1k Likes ➔ ₹50\n"
-    "• 2k Likes ➔ ₹80\n"
-    "• 5k Likes ➔ ₹200\n"
-    "• 10k Likes ➔ ₹400\n\n"
+    "• 100 Likes ➔ ₹7 | 1k Likes ➔ ₹50 | 10k Likes ➔ ₹400\n\n"
     "🔥 *PLATFORMS AVAILABLE:*\n"
     "📸 Instagram | 👥 Facebook | 🎥 YouTube | 🎵 TikTok | ✈️ Telegram | 👻 Snapchat\n\n"
-    "✔️ All Genuine Services | ⚡ Fast Delivery | 🔒 100% Safe & Secure"
+    "✔️ All Genuine Services | ⚡ Fast Delivery"
 )
 
 TEXT_COURSES = (
     "📈 *PREMIUM BUSINESS COURSES & LEARNING* 📈\n\n"
     "📚 *Reselling Business Mastery*\n"
     "• Complete A-to-Z setup to start a profitable flipping business with zero investment.\n\n"
-    "🤖 *AI Automation Agency (AAA) Course*\n"
-    "• Learn how to build AI chatbots and automate workflows for businesses using n8n, Zapier, and ChatGPT.\n\n"
-    "💻 *Freelancing & Agency Scaling*\n"
-    "• How to get high-ticket clients on Upwork/LinkedIn and scale your digital service agency.\n\n"
     "🎯 *Digital Marketing Pro*\n"
     "• Master Meta Ads (FB/Insta), Google Ads, and organic brand growth frameworks."
 )
@@ -286,30 +277,41 @@ def get_main_keyboard():
     )
     return markup
 
+def get_tools_categories_keyboard():
+    markup = InlineKeyboardMarkup(row_width=1)
+    markup.add(
+        InlineKeyboardButton("🔥 Top Selling & Most Demanding", callback_data="view_stock_TOP_SELLING"),
+        InlineKeyboardButton("🎨 AI, Design & Creativity", callback_data="view_stock_AI_DESIGN_CREATIVITY"),
+        InlineKeyboardButton("🤖 AI Tools (Full Kit)", callback_data="view_stock_AI_TOOLS"),
+        InlineKeyboardButton("💼 Business & Marketing", callback_data="view_stock_BUSINESS_MARKETING"),
+        InlineKeyboardButton("🌐 Web Dev, Cloud & Hosting", callback_data="view_stock_WEB_DEV_CLOUD"),
+        InlineKeyboardButton("🎓 Edu, Career & Learning", callback_data="view_stock_EDU_LEARNING"),
+        InlineKeyboardButton("⚙️ Short-Term Power Deals", callback_data="view_stock_SHORT_TERM_DEALS"),
+        InlineKeyboardButton("🛠️ 3D / CAD Engineering", callback_data="view_stock_CAD_ENGINEERING"),
+        InlineKeyboardButton("🔐 Security & Dev Tools", callback_data="view_stock_SECURITY_DEV_TOOLS"),
+        InlineKeyboardButton("📹 Video, Audio & Content", callback_data="view_stock_VIDEO_AUDIO_CONTENT"),
+        InlineKeyboardButton("🔗 Social, Branding & Landing", callback_data="view_stock_SOCIAL_BRANDING_LANDING"),
+        InlineKeyboardButton("📦 Miscellaneous Premium", callback_data="view_stock_MISC_PREMIUM"),
+        InlineKeyboardButton("⬅️ Back to Main Menu", callback_data="back_to_main")
+    )
+    return markup
+
+# Naya selection keyboard Virtual Accounts ke liye
+def get_virtual_platforms_keyboard():
+    markup = InlineKeyboardMarkup(row_width=1)
+    markup.add(
+        InlineKeyboardButton("✈️ Telegram Accounts", callback_data="sub_virtual_tg"),
+        InlineKeyboardButton("💬 WhatsApp Accounts", callback_data="sub_virtual_wa"),
+        InlineKeyboardButton("⬅️ Back to Main Menu", callback_data="back_to_main")
+    )
+    return markup
+
 def get_contact_keyboard(back_target="back_to_main"):
     markup = InlineKeyboardMarkup(row_width=1)
     markup.add(
         InlineKeyboardButton("📩 DM TO PLACE ORDER", url=f"https://t.me/{CONTACT_USERNAME}"),
         InlineKeyboardButton("⬅️ Back Menu", callback_data=back_target)
     )
-    return markup
-
-def get_country_keyboard():
-    markup = InlineKeyboardMarkup(row_width=2)
-    markup.add(
-        InlineKeyboardButton("🇮🇳 India", url=f"https://t.me/{CONTACT_USERNAME}"),
-        InlineKeyboardButton("🇺🇸 USA", url=f"https://t.me/{CONTACT_USERNAME}"),
-        InlineKeyboardButton("🇧🇩 Bangladesh", url=f"https://t.me/{CONTACT_USERNAME}"),
-        InlineKeyboardButton("🇿🇲 Zambia", url=f"https://t.me/{CONTACT_USERNAME}"),
-        InlineKeyboardButton("🇲🇲 Myanmar", url=f"https://t.me/{CONTACT_USERNAME}"),
-        InlineKeyboardButton("🇻🇪 Venezuela", url=f"https://t.me/{CONTACT_USERNAME}"),
-        InlineKeyboardButton("🇸🇦 Saudi Arabia", url=f"https://t.me/{CONTACT_USERNAME}"),
-        InlineKeyboardButton("🇷🇺 Russia", url=f"https://t.me/{CONTACT_USERNAME}"),
-        InlineKeyboardButton("🇨🇴 Colombia", url=f"https://t.me/{CONTACT_USERNAME}"),
-        InlineKeyboardButton("🇦🇪 UAE", url=f"https://t.me/{CONTACT_USERNAME}"),
-        InlineKeyboardButton("🇵🇰 Pakistan", url=f"https://t.me/{CONTACT_USERNAME}")
-    )
-    markup.add(InlineKeyboardButton("⬅️ Back Menu", callback_data="back_to_main"))
     return markup
 
 def get_whatsapp_links_keyboard():
@@ -336,14 +338,24 @@ def send_welcome(message):
 # --- 5. INTERACTIVE CALLBACK ROUTER ---
 @bot.callback_query_handler(func=lambda call: True)
 def handle_menu_navigation(call):
-    # Dynamic acknowledgment to clear loading animations
     bot.answer_callback_query(call.id)
     
     if call.data == "back_to_main":
         bot.edit_message_text(TEXT_START, call.message.chat.id, call.message.message_id, reply_markup=get_main_keyboard(), parse_mode="Markdown")
         
     elif call.data == "menu_tools":
-        bot.edit_message_text(TEXT_TOOLS, call.message.chat.id, call.message.message_id, reply_markup=get_contact_keyboard(), parse_mode="Markdown")
+        bot.edit_message_text(TEXT_TOOLS, call.message.chat.id, call.message.message_id, reply_markup=get_tools_categories_keyboard(), parse_mode="Markdown")
+        
+    elif call.data.startswith("view_stock_"):
+        category_key = call.data.replace("view_stock_", "")
+        stock_list = PREMIUM_STOCK.get(category_key, [])
+        
+        stock_text = f"📦 *CURRENT STOCK — LIMITED SLOTS* 🚀\n_All Plans Genuine - Fast Activation - 24/7 Support_\n\n"
+        for item in stock_list:
+            stock_text += item
+        
+        stock_text += f"\n📩 *Order karne ke liye niche click karke DM karein:*"
+        bot.edit_message_text(stock_text, call.message.chat.id, call.message.message_id, reply_markup=get_contact_keyboard(back_target="menu_tools"), parse_mode="Markdown")
         
     elif call.data == "menu_ott":
         bot.edit_message_text(TEXT_OTT, call.message.chat.id, call.message.message_id, reply_markup=get_contact_keyboard(), parse_mode="Markdown")
@@ -361,13 +373,19 @@ def handle_menu_navigation(call):
         bot.edit_message_text(TEXT_DEALS, call.message.chat.id, call.message.message_id, reply_markup=get_contact_keyboard(), parse_mode="Markdown")
         
     elif call.data == "menu_virtual":
-        virtual_instruction_text = f"{TEXT_VIRTUAL}\n\n🌐 *Select target proxy country location to verify live stock allocations:* "
-        bot.edit_message_text(virtual_instruction_text, call.message.chat.id, call.message.message_id, reply_markup=get_country_keyboard(), parse_mode="Markdown")
+        virtual_instruction_text = "📱 *VIRTUAL ACCOUNTS SELECTION* 📱\n\nPlatform select karein jiske liye aapko verified account chahiye:"
+        bot.edit_message_text(virtual_instruction_text, call.message.chat.id, call.message.message_id, reply_markup=get_virtual_platforms_keyboard(), parse_mode="Markdown")
+        
+    elif call.data == "sub_virtual_tg":
+        bot.edit_message_text(TEXT_TELEGRAM_STOCK, call.message.chat.id, call.message.message_id, reply_markup=get_contact_keyboard(back_target="menu_virtual"), parse_mode="Markdown")
+        
+    elif call.data == "sub_virtual_wa":
+        bot.edit_message_text(TEXT_WHATSAPP_STOCK, call.message.chat.id, call.message.message_id, reply_markup=get_contact_keyboard(back_target="menu_virtual"), parse_mode="Markdown")
         
     elif call.data == "menu_whatsapp_links":
         links_display_text = (
             "📢 *DIGITAL PRODUCTS MARKETPLACE OFFICIAL CHANNELS & GROUPS*\n\n"
-            "Stay up-to-date with immediate deal metrics and peer connection loops. Select a link below to open directly in WhatsApp:"
+            "Select a link below to open directly in WhatsApp:"
         )
         bot.edit_message_text(links_display_text, call.message.chat.id, call.message.message_id, reply_markup=get_whatsapp_links_keyboard(), parse_mode="Markdown")
 
@@ -376,4 +394,4 @@ def handle_menu_navigation(call):
 if __name__ == "__main__":
     print("Digital Products Marketplace bot instance is successfully running...")
     bot.infinity_polling()
-  
+    
